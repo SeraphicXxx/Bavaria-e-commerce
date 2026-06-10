@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply min-h-screen flex flex-col pt-[80px];
+    }
+
+    .main {
+        @apply mt-[80px];
+    }
+
+    .logo {
+        @apply w-40;
+    }
+
+    /* Navbar — always visible as a top bar */
+    .navbar {
+        @apply flex flex-row justify-between items-center py-5 px-6 md:px-20 fixed top-0 w-full z-50 h-[80px] backdrop-blur-md border-b border-black/10;
+        background: #020202;
+    }
+
+    /* Hamburger — mobile only */
+    .hamburger-label {
+        @apply fixed top-[22px] right-4 z-[60] lg:hidden cursor-pointer flex items-center justify-center w-10 h-10 rounded-md;
+        color: #0f0e0c;
+    }
+
+    /* Mobile dropdown — sits just below the navbar */
+    .mobile-menu {
+        @apply fixed top-[80px] left-0 w-full z-50 max-h-0 overflow-hidden transition-all duration-300 ease-in-out lg:hidden;
+        background: linear-gradient(to bottom, #f0eeea 0%, #ffffff 100%);
+    }
+
+    .mobile-nav-links {
+        @apply flex flex-col px-6 py-4 gap-1;
+    }
+
+    .mobile-nav-links a {
+        @apply font-lexend uppercase text-[13px] font-medium tracking-[0.15em] px-3 py-3
+            text-[#555] transition-colors duration-200 block
+            hover:text-[#0f0e0c];
+    }
+
+    .mobile-nav-links a.active {
+        @apply text-[#0f0e0c] bg-white;
+    }
+
+    /* Desktop nav links — unchanged */
+    .nav-links {
+        @apply flex flex-row gap-x-1 justify-center items-center;
+    }
+
+    .nav-links a {
+        @apply font-lexend uppercase text-[12px] font-normal tracking-[0.15em] px-3 py-1.5
+            text-[white] transition-colors duration-200
+            hover:text-[lightgray];
+        position: relative;
+        padding-bottom: 4px;
+    }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #E0E0E0;
+        transition: width 0.25s ease, left 0.25s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+        width: 100%;
+        left: 50%;
+    }
+
+    .nav-links a.active {
+        @apply text-[white] relative;
+    }
+
+    .brand {
+        @apply text-2xl uppercase font-black cursor-pointer font-lexend text-[red] tracking-[0.05em];
+    }
+    .sub-brand {
+        @apply text-sm uppercase font-black cursor-pointer font-lexend text-[gray];
+    }
+    .divider {
+        @apply h-5 w-px bg-[#fff] mx-2;
+    }
+    .footer-container {
+        @apply bg-[#E2E5E6] h-auto lg:h-[175px] items-center justify-center lg:justify-between w-full flex flex-col gap-y-5 lg:flex-row gap-x-5 py-20 lg:py-5 px-10 mt-auto;
+    }
+
+    .footer-socials {
+        @apply flex flex-col gap-y-5 lg:gap-0 items-center justify-center lg:justify-around h-full;
+    }
+
+    .footer-contacts {
+        @apply flex flex-col lg:flex-row gap-x-10 gap-y-5 items-center h-full;
+    }
+
+    .footer-logo{
+        @apply flex flex-col gap-y-4 lg:gap-y-8 h-full items-center lg:items-end;
+    }
+
+    .social-media {
+        @apply bg-black p-2 rounded-xl flex items-center justify-center text-white;
+    }
+
+    .title-header {
+        @apply text-3xl lg:text-lg font-semibold font-calibri;
+    }
+
+    .title-subheader {
+        @apply text-base lg:text-xs font-medium font-calibri;
+    }
+
+    .contact-no {
+        @apply text-sm lg:text-xs font-calibri font-light;
+    }
+    .main-content {
+        @apply flex flex-col gap-y-10 lg:gap-y-20;
+    }
+
+}
