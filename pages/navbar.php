@@ -54,14 +54,14 @@ $isLanding = ($current === 'LandingPage.php');
                 <li><a href="#about" class="nav-section-link" data-section="about">About Us</a></li>
                 <li><a href="#inquire" class="nav-section-link" data-section="inquire">Inquire</a></li>
                 <div class="divider"></div>
-                <li><a href="#showcase" class="nav-section-link" data-section="showcase">Showcase</a></li>
+                <li><a href="./pages/showcase.php" class="nav-section-link <?= active('showcase.php', $current) ?>">Showcase</a></li>
             <?php else: ?>
-                <li><a href="LandingPage.php#home">Home</a></li>
-                <li><a href="LandingPage.php#services">Services</a></li>
-                <li><a href="LandingPage.php#about">About Us</a></li>
-                <li><a href="LandingPage.php#inquire">Inquire</a></li>
+                <li><a href="../LandingPage.php#home">Home</a></li>
+                <li><a href="../LandingPage.php#services">Services</a></li>
+                <li><a href="../LandingPage.php#about">About Us</a></li>
+                <li><a href="../LandingPage.php#inquire">Inquire</a></li>
                 <div class="divider"></div>
-                <li><a href="LandingPage.php#showcase">Showcase</a></li>
+                <li><a href="showcase.php" class="nav-section-link <?= active('showcase.php', $current) ?>">Showcase</a></li>
             <?php endif; ?>
         </ul>
     </ul>
@@ -75,13 +75,13 @@ $isLanding = ($current === 'LandingPage.php');
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#inquire">Inquire</a></li>
-            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="./pages/showcase.php" class="nav-section-link <?= active('showcase.php', $current) ?>">Showcase</a></li>
         <?php else: ?>
-            <li><a href="LandingPage.php">Home</a></li>
-            <li><a href="LandingPage.php#services">Services</a></li>
-            <li><a href="LandingPage.php#about">About Us</a></li>
-            <li><a href="LandingPage.php#inquire">Inquire</a></li>
-            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="../LandingPage.php#home">Home</a></li>
+            <li><a href="../LandingPage.php#services">Services</a></li>
+            <li><a href="../LandingPage.php#about">About Us</a></li>
+            <li><a href="../LandingPage.php#inquire">Inquire</a></li>
+            <li><a href="showcase.php" class="nav-section-link <?= active('showcase.php', $current) ?>">Showcase</a></li>
         <?php endif; ?>
     </ul>
 </div>

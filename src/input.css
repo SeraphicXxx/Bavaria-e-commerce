@@ -160,7 +160,7 @@
     }
 
     .services-card{
-        @apply flex flex-col items-center justify-center gap-y-5 p-5 bg-white rounded-xl w-[300px] h-[300px] shadow-md shadow-[#8B8B8B] hover:scale-105 hover:bg-[black] transition-colors transition-transform duration-300;
+        @apply flex flex-col items-center justify-center gap-y-5 p-5 bg-white rounded-xl w-[300px] h-[300px] shadow-md shadow-[#8B8B8B] hover:scale-105 hover:bg-[black] transition-colors transition-transform duration-300 cursor-pointer;
     }
 
     .services-icon{
@@ -232,6 +232,58 @@
     }
 
     .inquire-button{
-        @apply bg-[#C30008] text-white px-5 py-2 rounded-md hover:bg-[#8B8B8B] transition-colors duration-200;
+        @apply bg-[#C30008] text-white px-5 py-3 rounded-full hover:bg-[#8B8B8B] transition-colors duration-200;
+    }
+
+    .showcaseImage{
+        @apply cursor-pointer;
+    }
+    
+    .showcase-text-1{
+        @apply absolute top-[13%] left-[50%] transform w-full text-center -translate-x-1/2 -translate-y-1/2 font-black font-lexend-deca text-[60px] lg:text-[128px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .showcase-text-2{ 
+        @apply absolute top-[14.5%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center text-[8px] md:text-[16px] lg:text-[32px] p-3 lg:p-10 w-full font-lexend text-[#f2f2f2];
+    }
+
+    .showcase-text-3{
+        @apply absolute px-5 top-[30%] left-[50%] transform w-full text-start -translate-x-1/2 -translate-y-1/2 font-extrabold font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .showcase-text-4{ 
+        @apply absolute px-5 top-[31%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-start text-[8px] md:text-[16px] lg:text-[32px] w-full font-lexend text-[#f2f2f2];
+    }
+
+    .showcase-text-5{
+        @apply absolute px-5 top-[41%] right-[0%] transform text-end font-extrabold font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .showcase-text-6{ 
+        @apply absolute px-5 top-[42.7%] right-[0%] transform text-end text-[8px] md:text-[16px] lg:text-[32px] font-lexend text-[#f2f2f2];
+    }
+
+    .showcase-text-7{
+        @apply absolute px-5 top-[55.5%] left-[50%] transform w-full text-start -translate-x-1/2 -translate-y-1/2 font-extrabold font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .showcase-text-8{ 
+        @apply absolute px-5 top-[56.3%] left-[0%] transform text-start text-[8px] md:text-[16px] lg:text-[32px] w-[60%] font-lexend text-[#f2f2f2];
+    }
+
+    .showcase-text-9{
+        @apply absolute px-5 top-[68%] right-[0%] transform text-end font-extrabold font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .showcase-text-10{ 
+        @apply absolute px-5 top-[69.8%] right-[0%] w-[50%] transform text-end text-[8px] md:text-[16px] lg:text-[32px] font-lexend text-[#f2f2f2];
+    }
+
+    .showcase-text-11{
+        @apply absolute top-[85%] left-[50%] transform w-full text-center -translate-x-1/2 -translate-y-1/2 font-extrabold font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .showcase-text-12{ 
+        @apply absolute top-[86.4%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center text-[8px] md:text-[16px] lg:text-[32px] w-[90%] font-lexend text-[#f2f2f2];
     }
 }
