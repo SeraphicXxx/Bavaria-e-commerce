@@ -93,7 +93,7 @@
     }
     
     .footer-container{
-        @apply flex flex-col justify-center items-center bg-black w-full h-auto py-5;
+        @apply flex flex-col justify-center items-center bg-black w-full h-auto py-5 mb-5;
     }
 
     .footer-title{
@@ -105,7 +105,7 @@
     }
 
     .copyrights-text{
-        @apply text-[16px] lg:text-[20px] text-[#f2f2f2] font-lexend;
+        @apply text-[12px] lg:text-[16px] text-[#f2f2f2] font-lexend;
     }
 
     .social-media {
@@ -224,7 +224,7 @@
     }
 
     .inquire-form{
-        @apply flex flex-col gap-y-5 w-[80%] lg:w-[50%] h-auto p-10 bg-[#000]/50 shadow-lg shadow-[#fff] rounded-xl items-center justify-center;
+        @apply flex flex-col gap-y-5 w-[80%] lg:w-[50%] h-auto p-10 bg-[#000]/50 shadow-lg shadow-[#fff] rounded-xl items-center justify-center mb-20;
     }
 
     .inquire-input{
