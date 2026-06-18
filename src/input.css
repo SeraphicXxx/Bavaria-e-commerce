@@ -93,7 +93,7 @@
     }
     
     .footer-container{
-        @apply flex flex-col justify-center items-center bg-black w-full h-auto py-5 mb-5;
+        @apply flex flex-col justify-center items-center bg-black w-full h-auto py-5;
     }
 
     .footer-title{
@@ -285,5 +285,39 @@
 
     .showcase-text-12{ 
         @apply absolute top-[86.4%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center text-[8px] md:text-[16px] lg:text-[32px] w-[90%] font-lexend text-[#f2f2f2];
+    }
+
+
+    /* BMW 3 Showcase */
+    .bmw3-text-1{
+        @apply absolute top-[4%] left-[50%] transform w-full text-center -translate-x-1/2 -translate-y-1/2 font-black font-lexend-deca text-[60px] lg:text-[128px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .bmw3-text-2{ 
+        @apply absolute top-[5%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center text-[8px] md:text-[16px] lg:text-[32px] p-3 lg:p-10 w-full font-lexend text-[#f2f2f2];
+    }
+
+    .bmw3-text-3{
+        @apply absolute top-[36%] right-[0%] transform px-10 text-end font-black font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .bmw3-text-4{ 
+        @apply absolute top-[37.8%] right-[0%] transform px-10 w-[50%] text-end text-[8px] md:text-[16px] lg:text-[32px] font-lexend text-[#f2f2f2];
+    }
+
+    .bmw3-text-5{
+        @apply absolute top-[66%] left-[0%] transform px-10 text-start font-black font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+    
+    .bmw3-text-6{ 
+        @apply absolute top-[67.8%] left-[0%] transform px-10 w-[63%] text-start text-[8px] md:text-[16px] lg:text-[32px] font-lexend text-[#f2f2f2];
+    }
+
+    .bmw3-text-7{
+        @apply absolute bottom-[4%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 px-10 text-center w-full font-black font-lexend-deca text-[60px] lg:text-[96px] bg-gradient-to-b from-[#ffffff] to-[#8B8B8B] bg-clip-text text-transparent;
+    }
+
+    .bmw3-text-8{ 
+        @apply absolute bottom-[3%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 px-10 w-full text-center text-[8px] md:text-[16px] lg:text-[32px] font-lexend text-[#f2f2f2];
     }
 }

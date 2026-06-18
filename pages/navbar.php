@@ -1,6 +1,15 @@
 <?php
 $current = basename($_SERVER['PHP_SELF']);
 
+$showcaseSeries =[
+    'showcase.php',
+    'bmw3series.php',
+    'bmw5series.php',
+    'bmw7series.php',
+    'bmw4series.php',
+    'bmw8series.php'
+];
+
 function active($file, $current)
 {
     return $file === $current ? 'active' : '';
@@ -54,14 +63,14 @@ $isLanding = ($current === 'LandingPage.php');
                 <li><a href="#about" class="nav-section-link" data-section="about">About Us</a></li>
                 <li><a href="#inquire" class="nav-section-link" data-section="inquire">Inquire</a></li>
                 <div class="divider"></div>
-                <li><a href="./pages/showcase.php" class="nav-section-link <?= active('showcase.php', $current) ?>">Showcase</a></li>
+                <li><a href="./pages/showcase.php" class="nav-section-link <?= in_array($current, $showcaseSeries) ? 'active' : '' ?>">Showcase</a></li>
             <?php else: ?>
                 <li><a href="../LandingPage.php#home">Home</a></li>
                 <li><a href="../LandingPage.php#services">Services</a></li>
                 <li><a href="../LandingPage.php#about">About Us</a></li>
                 <li><a href="../LandingPage.php#inquire">Inquire</a></li>
                 <div class="divider"></div>
-                <li><a href="showcase.php" class="nav-section-link <?= active('showcase.php', $current) ?>">Showcase</a></li>
+                <li><a href="showcase.php" class="nav-section-link <?= in_array($current, $showcaseSeries) ? 'active' : '' ?>">Showcase</a></li>
             <?php endif; ?>
         </ul>
     </ul>

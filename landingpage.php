@@ -194,7 +194,7 @@
             <div class="inquire-container">
                 <!-- <img src="./assets/img7.jfif" alt="bg" class="w-full h-auto">     -->
                 <div class="inquire-card">
-                    <span class="inquire-title">Contact Us</span>
+                    <span class="inquire-title">Inquire Now</span>
                     <form action="#" method="post" class="inquire-form">
                         <input type="text" name="name" placeholder="Name" class="inquire-input">
                         <input type="email" name="email" placeholder="Email" class="inquire-input">
